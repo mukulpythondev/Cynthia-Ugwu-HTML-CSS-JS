@@ -88,8 +88,24 @@ document.querySelectorAll('.element').forEach(function (element) {
        })
      })
 })
+function updateCurrentTime() {
+  const currentTimeElement = document.getElementById("currentTime");
+  const currentTime = new Date();
 
-// Call the circleMouseFollower function to start following the cursor
+  const hours = currentTime.getHours();
+  const minutes = currentTime.getMinutes();
+  const amOrPm = hours >= 12 ? "PM" : "AM";
+
+  // Convert 24-hour format to 12-hour format
+  const formattedHours = hours % 12 || 12;
+
+  const formattedTime = `${formattedHours}:${minutes < 10 ? "0" : ""}${minutes} ${amOrPm}`;
+
+  currentTimeElement.textContent = formattedTime;
+}
+
+updateCurrentTime();
+setInterval(updateCurrentTime, 1000);
 circleMouseFollower();
 firstpageanim()
 mousesize()

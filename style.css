@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'General Sans';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+  
+}
+.underline-effect {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .underline-effect::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+  }
+
+  .underline-effect:hover {
+    color: #fff;
+  }
+
+  .underline-effect:hover::before {
+    width: 100%;
+}
+#minicircle{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 10px;
+    position: absolute;
+    z-index: 999;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%);
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+}
+
+#page1{
+    background-color: black;
+    width: 100%;
+     height: 100vh;
+     color: white;
+}
+
+#nav{
+    width: 100%;
+    padding: 20px 40px ;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+#heading{
+    margin-top: 100px;
+}
+
+#heading h1{
+    font-size: 9vw;
+
+    font-weight: 800;
+    opacity: .7;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-left: 50px;
+}
+
+#blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+#blocktext #secondh1{
+    margin-left: 170px;
+}
+
+#blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#smallheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 120px;
+    color: white;
+    padding-right: 50px;
+}
+#smallheading h5{
+text-transform: uppercase;     
+font-size: 1.2vw;
+text-align: right;
+margin-top: .05vw;
+}
+#page1footer{
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+#page1footer a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+#iconset{
+    display: flex;
+    color: black;
+    gap: 5px;
+}
+#iconset .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+   
+   background-color: #AAAAAA;
+   
+}
+#page2{
+    height: 100vh;
+    margin-top: 15vw;
+    background-color: black;
+    width: 100%;
+    padding-right: 10vw;
+}
+.element{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 3vw 3vw;
+    color: white;
+}
+.element h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+.element img{
+    height: 140%;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+}
+#about{
+    width: 100%;
+    padding: 10vw 5vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 35vw;
+    gap: 40px;
+    background-color: black;
+
+}
+#text{
+    width: 30rem;
+}
+#text h5{
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+#text p{
+   text-align: left;
+    margin-bottom: 30px;
+    line-height: 28px;
+    font-size: 18px;
+}
+#text a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+#text a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(0.9);
+}
+#about img{
+    width: 225px;     
+}
+#subscribe{
+    color: white;
+    padding: 20px 30px;
+    padding-bottom: 6vw;
+    background-color: black;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    margin-top: 10px;
+    font-weight: 600;
+}
+#footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footerright a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
